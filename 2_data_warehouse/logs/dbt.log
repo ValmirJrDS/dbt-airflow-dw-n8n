@@ -1,0 +1,30 @@
+[0m18:51:55.002053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a0d6224920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a0d6508620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a0d6d30110>]}
+
+
+============================== 18:51:55.098383 | 6ccd5e51-a687-493c-832b-28055e6d3703 ==============================
+[0m18:51:55.098383 [info ] [MainThread]: Running with dbt=1.9.8
+[0m18:51:55.099919 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/valmir/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m19:54:29.072670 [debug] [MainThread]: Starter project path: /home/valmir/journey-data-engineering/dbt-airflow-dw-n8n/1_local_setup/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m19:54:29.089365 [info ] [MainThread]: 
+Your new dbt project "jornada_dw" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:54:29.091845 [info ] [MainThread]: Setting up your profile.
+[0m20:01:30.825587 [info ] [MainThread]: Profile jornada_dw written to /home/valmir/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:01:30.837695 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 4175.9814, "process_in_blocks": "36632", "process_kernel_time": 0.75792, "process_mem_max_rss": "121260", "process_out_blocks": "32448", "process_user_time": 8.848045}
+[0m20:01:30.840635 [debug] [MainThread]: Command `dbt init` succeeded at 20:01:30.840111 after 4175.99 seconds
+[0m20:01:30.843569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a0da9bb4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a0d8920e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79a0d6410530>]}
+[0m20:01:30.852605 [debug] [MainThread]: Flushing usage events
+[0m20:01:31.412777 [debug] [MainThread]: An error was encountered while trying to flush usage events
