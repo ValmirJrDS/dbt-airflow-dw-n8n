@@ -3,11 +3,12 @@
 import os
 from pendulum import datetime
 
+from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+from cosmos.profiles import PostgresUserPasswordProfileMapping
+
 def _generate_dbt_dag(env: str):
     # -- só aqui dentro é que carregamos tudo que pode atrasar o parsing --
     from airflow.models import Variable
-    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
-    from cosmos.profiles import PostgresUserPasswordProfileMapping
 
     # configurações de Dev vs Prod
     profile_dev = ProfileConfig(
