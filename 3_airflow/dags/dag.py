@@ -23,7 +23,7 @@ def _generate_dbt_dag(env: str):
         profile_name="jornada_dw",
         target_name="prod",
         profile_mapping=PostgresUserPasswordProfileMapping(
-            conn_id="railway_postgres_db",
+            conn_id="gpc-postgres-db",
             profile_args={"schema": "public"},
         ),
     )
